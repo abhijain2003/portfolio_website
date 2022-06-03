@@ -13,6 +13,7 @@ import mongodb from "../images/mongodb.png";
 import nodejs from "../images/nodejs.png";
 import tailwind from "../images/tailwind.png";
 import express from "../images/express.png";
+import nextjs from "../images/nextjs.png";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -74,6 +75,7 @@ function About({ color }) {
               <p className='flex justify-evenly font-medium text-[14px] w-[200px] items-center my-2 bg-white mx-auto h-[50px]' style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px" }} ><img alt='' src={express} className="w-[30px] h-[30px]" /> expressjs</p>
               <p className='flex justify-evenly font-medium text-[14px] w-[200px] items-center my-2 bg-white mx-auto h-[50px]' style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px" }} ><img alt='' src={nodejs} width="30px" height="30px" /> nodejs</p>
               <p className='flex justify-evenly font-medium text-[14px] w-[200px] items-center my-2 bg-white mx-auto h-[50px]' style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px" }} ><img alt='' src={mongodb} width="30px" height="30px" /> mongodb</p>
+              <p className='flex justify-evenly font-medium text-[14px] w-[200px] items-center my-2 bg-white mx-auto h-[50px]' style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px" }} ><img alt='' src={nextjs} width="30px" height="30px" /> nextjs</p>
             </div>
           </div>
         </li>
