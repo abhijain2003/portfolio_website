@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -20,6 +21,11 @@ function Home({ color }) {
           <h3 className='font-medium mt-4'>I code and build frontend UI, node server, Rest API, data for Database for websites.</h3>
           <h3 className='font-medium mt-4'>This is my personal website where I will be sharing my learnings and things I have done.</h3>
         </div>
+         <div className="w-[30%] flex justify-evenly opacity-100 sm:opacity-0">
+            <NavLink className={day ? "under" : "uper"} exact to={param.pathname === "/" ? "/ABOUT" : "/"} >{param.pathname === "/ABOUT" ? "HOME" : "ABOUT"}</NavLink>
+            <NavLink className={day ? "under" : "uper"} exact to={param.pathname === "/" ? "/PROJECTS" : "/"} >{param.pathname === "/PROJECTS" ? "HOME" : "PROJECTS"}</NavLink>
+            <a href="https://web3talks.co/" className={day ? "under" : "uper"} >BLOGS</a>
+          </div>
         <div className='flex justify-evenly w-[200px] mt-4 mx-auto sm:mt-0'>
           <a href='https://twitter.com/abhiwd'><TwitterIcon style={{ color: "#00acee", border: color ? '1px solid #1a202ccc' : '1px solid white', padding: '2px' }} /></a>
           <a href='https://www.instagram.com/abhijain.5/'><InstagramIcon style={{ color: "#e95950", border: color ? '1px solid #1a202ccc' : '1px solid white', padding: '2px' }} /></a>
