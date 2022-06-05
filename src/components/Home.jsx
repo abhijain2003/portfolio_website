@@ -6,8 +6,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import abhi from "../images/abhi.png";
+import { useLocation } from "react-router-dom";
 
 function Home({ color }) {
+
+  const param = useLocation();
+
   return (
     <div className="sm:grid min-h-screen flex flex-col" style={{ backgroundColor: color ? "#E8F9FD" : 'rgba(26, 32, 44, 0.8)', gridTemplateColumns: '25% 45% 30%' }}>
       <div></div>
@@ -21,11 +25,11 @@ function Home({ color }) {
           <h3 className='font-medium mt-4'>I code and build frontend UI, node server, Rest API, data for Database for websites.</h3>
           <h3 className='font-medium mt-4'>This is my personal website where I will be sharing my learnings and things I have done.</h3>
         </div>
-         <div className="w-[30%] flex justify-evenly opacity-100 sm:opacity-0">
-            <NavLink className={day ? "under" : "uper"} exact to={param.pathname === "/" ? "/ABOUT" : "/"} >{param.pathname === "/ABOUT" ? "HOME" : "ABOUT"}</NavLink>
-            <NavLink className={day ? "under" : "uper"} exact to={param.pathname === "/" ? "/PROJECTS" : "/"} >{param.pathname === "/PROJECTS" ? "HOME" : "PROJECTS"}</NavLink>
-            <a href="https://web3talks.co/" className={day ? "under" : "uper"} >BLOGS</a>
-          </div>
+        <div className="my-10 font-bold mx-auto flex justify-evenly opacity-100 sm:opacity-0">
+          <NavLink className={color ? "under" : "uper"} exact to={param.pathname === "/" ? "/ABOUT" : "/"} >{param.pathname === "/ABOUT" ? "HOME" : "ABOUT"}</NavLink>
+          <NavLink className={color ? "under" : "uper"} exact to={param.pathname === "/" ? "/PROJECTS" : "/"} >{param.pathname === "/PROJECTS" ? "HOME" : "PROJECTS"}</NavLink>
+          <a href="https://web3talks.co/" className={color ? "under" : "uper"} >BLOGS</a>
+        </div>
         <div className='flex justify-evenly w-[200px] mt-4 mx-auto sm:mt-0'>
           <a href='https://twitter.com/abhiwd'><TwitterIcon style={{ color: "#00acee", border: color ? '1px solid #1a202ccc' : '1px solid white', padding: '2px' }} /></a>
           <a href='https://www.instagram.com/abhijain.5/'><InstagramIcon style={{ color: "#e95950", border: color ? '1px solid #1a202ccc' : '1px solid white', padding: '2px' }} /></a>
@@ -40,3 +44,4 @@ function Home({ color }) {
 }
 
 export default Home
+
