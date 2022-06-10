@@ -8,6 +8,7 @@ import disney from "../images/disney.png";
 import tesla from "../images/tesla.png";
 import LinkIcon from '@mui/icons-material/Link';
 import web3 from "../images/web3.png";
+import todo from "../images/todo.png";
 import shopsy from "../images/shopsy.png";
 import netflix from "../images/netflix.png";
 
@@ -15,6 +16,11 @@ function Project({ color }) {
 
   const project = [
     {
+      img: todo,
+      para: "Full stack todo webapp, create rooms for specific tasks, write tasks and be productive",
+      repoLink: "https://github.com/abhijain2003/todo_frontend",
+      webLink: "https://todo-bay-gamma.vercel.app/"
+    },{
       img: web3,
       para: "This is the full stack blog website where I post blogs related to web3 and blockchains.",
       repoLink: "#",
