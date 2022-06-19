@@ -58,7 +58,7 @@ function Project({ color }) {
   ];
 
   return (
-    <div className="sm:grid min-h-screen flex flex-col pb-10" style={{ backgroundColor: color ? "#E8F9FD" : 'rgba(26, 32, 44, 0.8)', gridTemplateColumns: '20% 60% 20%' }}>
+    <div className="sm:grid min-h-screen flex flex-col pb-10" style={{ backgroundColor: color ? "#E8F9FD" : 'rgba(26, 32, 44, 0.8)', gridTemplateColumns: '20% 60% 20%'}}>
       <div></div>
       <div className='flex flex-col'>
         <h1 style={{ fontSize: '22px' }} className='mt-4 mx-auto w-[90%] text-slate-400' >Welcome to my project library. Here, are top projects that I built on myself.</h1>
@@ -66,8 +66,8 @@ function Project({ color }) {
           {project.map((web) => (
             <li className='mt-4'>
               <h1 className='mb-4 text-xl font-bold' style={{ color: color ? 'rgba(26, 32, 44, 0.8)' : 'white' }} >{web.title}</h1>
-              <img alt='' src={web.img} className='w-[80%] mx-auto sm:w-full border-2 border-solid border-[#E8F9FD] hover:scale-105 ease-in duration-300 opacity-[60%] hover:opacity-[100%]' />
-              <p className='mt-4 w-[200px] bg-white p-2 rounded-xl relative bottom-[50px]'>{web.para}</p>
+              <img alt='' src={web.img} className='w-[80%] rounded-[20px] mx-auto sm:w-full border-2 border-solid border-[#E8F9FD] hover:scale-105 ease-in duration-300 opacity-[60%] hover:opacity-[100%]' />
+              <p style={{backgroundColor: color ? 'rgba(26, 32, 44, 0.8)' : "white", color: color ? 'white' : 'rgba(26, 32, 44, 0.8)'}} className='mt-4 w-[200px] p-2 rounded-xl relative bottom-[50px]'>{web.para}</p>
               <div><a href={web.webLink}><LinkIcon className='hover:scale-105' style={{ color: color ? "#171515" : 'white', border: color ? '1px solid #1a202ccc' : '1px solid white', padding: '2px' }} /></a> <a href={web.repoLink}> <GitHubIcon className='hover:scale-105' style={{ color: color ? "#171515" : 'white', border: color ? '1px solid #1a202ccc' : '1px solid white', padding: '2px' }} /></a></div>
             </li>
           ))}

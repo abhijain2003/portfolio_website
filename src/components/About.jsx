@@ -22,7 +22,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 function About({ color }) {
   return (
-    <div className="sm:grid min-h-screen flex flex-col pb-10" style={{ backgroundColor: color ? "#E8F9FD" : 'rgba(26, 32, 44, 0.8)', gridTemplateColumns: '25% 45% 30%' }}>
+    <div className="sm:grid min-h-screen flex flex-col pb-10" style={{ backgroundColor: color ? "#E8F9FD" : 'rgba(26, 32, 44, 0.8)', gridTemplateColumns: '20% 60% 20%' }}>
       <div></div>
       <ul className='mt-10'>
         <li><div className='mb-4 flex flex-col w-[90%] mx-auto'>
